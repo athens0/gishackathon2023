@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'main',
+    'login',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru'
 
-TIME_ZONE = 'Yakutsk'
+TIME_ZONE = 'Asia/Yakutsk'
 
 USE_I18N = True
 
@@ -117,8 +119,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-STATIC_FILES_DIRS = [
-    'static/',
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
 ]
 
 # Default primary key field type
