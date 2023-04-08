@@ -1,30 +1,29 @@
 {% load static %}
 
-<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-    <div class="f-text-n-logo">
-        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-            <img class="header-logo" src="{% static 'main/img/logo.png' %}" alt="" height="50px">
-        </a>
-        <p class="text-logo"> FIREFLY YKT предоставляет вам дроны, необходимые для мониторинга действительных лесных пожаров. </p>
-        <a href="#">
-            <img class="telegram-logo" src="{% static 'main/img/telegramlogo.png' %}" alt="telegramlogo">
-        </a>
-    </div>
-
-    <div class="col mb-3">
-        <h5>Компания</h5>
-            <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">О нас </a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Вакансии</a></li>
-            </ul>
-    </div>
-
-    <div class="col mb-3">
-        <h5>Помощь</h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Тех.Поддержка</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Соглашение</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Приватность</a></li>
-        </ul>
+<footer>
+    <div class="row justify-content-md-center footer-h">
+        <div class="footer-el col-sm d-flex justify-content-around">
+            <div class="footer-el-h d-flex flex-column mb-3">
+                <a href="{% url 'main:home' %}" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                    <img class="header-logo" src="{% static 'main/img/logo.png' %}" alt="" height="60px">
+                </a>
+                <p class="text-logo"> FIREFLY YKT предоставляет вам<br>дроны, необходимые для<br>мониторинга действительных лесных<br>пожаров.</p>
+                <a href="#">
+                    <img src="{% static 'main/img/telegramlogo.png' %}">
+                    Telegram
+                </a>
+            </div>
+            <div class="footer-el-h d-flex flex-column mb-3">
+                <span class="footer-title fw-bold">Компания</span>
+                <a href="{% url 'main:about' %}">О нас</a>
+                <a href="{% url 'main:jobs' %}">Вакансии</a>
+            </div>
+            <div class="footer-el-h d-flex flex-column mb-3">
+                <span class="footer-title fw-bold">Помощь</span>
+                <a href="https://t.me/rlycluster">Тех.Поддержка</a>
+                <a href="https://t.me/yarrichelli">Условия пользования</a>
+                <a href="#">Политика конфиденциальности</a>
+            </div>
+        </div>
     </div>
 </footer>
