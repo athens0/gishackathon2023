@@ -138,3 +138,38 @@ footer a{
 	color: #000;
 	margin-bottom: 30px;
 }
+
+.table-title{
+	margin-bottom: 20px;
+}
+
+.btn-more{
+	margin-top: 10px;
+}
+
+.jobs-trt2-title{
+	margin-bottom: 50px;
+}
+
+.jobs-form-h{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/jobs-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+	border-radius: 53px;
+}
+
+.jobs-form{
+    padding: 24px;
+    border-radius: 32px;
+    background-color: #fff;
+	max-width: min-content;
+	min-width: 400px;
+	margin: 30px;
+	margin-top: 50px;
+	margin-bottom: 130px;
+}
+
+.jobs-title{
+	margin-bottom: 30px;
+}
