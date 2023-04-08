@@ -38,3 +38,11 @@ header{
 	color: #fff;
 }
 
+.col-mb-3 {
+	padding: 0px 80px;
+	width: 25%;
+}
+
+.telegram-logo {
+	width: 12%;
+}
