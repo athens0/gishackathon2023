@@ -95,3 +95,19 @@ header{
 .telegram-logo {
 	width: 12%;
 }
+
+.map-title{
+	margin-bottom: 60px;
+}
+
+.map-stats{
+	margin-bottom: 60px;
+}
+
+.map-stats-img{
+	max-width: 400px;
+}
+
+.map-stats-text{
+	text-align: center;
+}
