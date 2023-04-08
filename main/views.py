@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 def index(request):
     return render(request, 'main/index.html')
@@ -11,3 +11,8 @@ def about_us(request):
 
 def jobs(request):
     return render(request, 'main/jobs.html')
+
+def sub(request):
+    if not request.user.is_authenticated:
+        return redirect(request.META.get('HTTP_REFERER', '/'))
+    return render(request, 'main/sub.html')
