@@ -18,9 +18,7 @@
         <div class="mb-3">
             <label for="id_password1" class="form-label">Пароль</label>
             <input type="password" name="password1" class="form-control password-input" autocomplete="new-password" id="id_password1" required>
-            <span class="password-forgot">Забыли пароль? <a href="#">Восстановить</a></span>
         </div>
         <button type="submit" class="btn btn-primary">Войти</button>
-        <span class="login-end">Нету аккаунта? <a href="{% url 'login:register' %}">Зарегистрироваться</a></span>
     </form>
 {% endblock %}
