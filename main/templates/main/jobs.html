@@ -1,11 +1,72 @@
 {% extends "main/layout.html" %}
 {% load static %}
-{% block title %} Вакансии {% endblock %}
 
-
+{% block title %}Вакансии{% endblock %}
 
 {% block body %}
-
-<h1>Test</h1>
-
+    <main>
+        <div class="trt1 container">
+            <h1 class="fw-bold jobs-title">Вакансии</h1>
+            <div class="jobs-form-h d-flex justify-content-end">
+                <form class="jobs-form flex-column d-flex" method="post">
+                    {% csrf_token %}
+                    <h2 class="">Заполните заявку</h2>
+                    <input type="text" class="form-control jobs-form-input mb-3" placeholder="Ваш город" required>
+                    <input type="tel" class="form-control jobs-form-input mb-3" placeholder="+7 (999) 999-99-99" required>
+                    <input type="text" class="form-control jobs-form-input mb-3" placeholder="Специализация" required>
+                    <button type="submit" class="btn btn-outline-dark jobs-form-btn mb-3">Отправить заявку</button>
+                    <p class="mb-3">Отправляя заявку, вы принимаете Политику конфиденциальности и соглашаясь получать звонки и SMS от FireFly, а также соглашаетесь на переписку с нами в Telegram</p>
+                </form>
+            </div>
+        </div>
+        <div class="trt2 container">
+            <h1 class="fw-bold jobs-trt2-title">Приходите работать к нам</h1>
+            <table class="table">
+                <h3 class="table-title">Специализации</h3>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="footer-el-h d-flex flex-column mb-3">
+                                <span>Роль</span>
+                                <span class="fw-bold">Оператор дрона</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="footer-el-h d-flex flex-column mb-3">
+                                <span>Требования</span>
+                                <span class="fw-bold">Хороший интернет, ПК</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="footer-el-h d-flex flex-column mb-3">
+                                <span>Обязанности</span>
+                                <span class="fw-bold">Оперативный контроль</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="footer-el-h d-flex flex-column mb-3">
+                                <span>Роль</span>
+                                <span class="fw-bold">Диспетчер</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="footer-el-h d-flex flex-column mb-3">
+                                <span>Требования</span>
+                                <span class="fw-bold">8 часовая смена</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="footer-el-h d-flex flex-column mb-3">
+                                <span>Обязанности</span>
+                                <span class="fw-bold">Контроль технического <br> состояния беспилотника</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="https://t.me/yarrichelli" class="btn btn-outline-dark btn-more">Подробнее</a>
+        </div>
+    </main>
 {% endblock %}
