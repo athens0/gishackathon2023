@@ -1,0 +1,41 @@
+{% extends "main/layout.html" %}
+{% load static %}
+{% block title %} О нас {% endblock %}
+
+
+
+{% block body %}
+    <main>
+        <div class="text-center">
+            <div class="d-flex flex-column mb-3 sub-h">
+                <h1 class="fw-bold title">О нас</h1>
+            </div>
+        </div>
+    </main>
+
+    <div class="trt2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm left">
+                    <h1 class="fw-bold col-sm">Кто мы?</h1>
+                    <p>Мы - команда начинающих разработчиков и энтузиастов, использующих новейшие технологии при работе с нашими проектами. Мы приложим все усилия, чтобы подарить Вам комфорт и счастье.</p>
+                </div>
+                <img class="col-sm title-mascot" src="{% static 'main/img/rafiki.png' %}">
+            </div>
+        </div>
+    </div>
+
+    <div class="trt3">
+        <div class="container">
+            <div class="row">
+                <img class="col-sm title-mascot-2" src="{% static 'main/img/pana.png' %}">
+                <div class="col-sm left">
+                    <h1 class="fw-bold col-sm">Что мы делаем?</h1>
+                    <p>Мы дарим Вам практичный и приятный в использовании продукт,
+                        чтобы Вам было удобно. В будущем мы хотим воплощать в жизнь всё
+                        больше интересных и качественных проектов.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
