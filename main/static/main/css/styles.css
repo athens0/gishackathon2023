@@ -111,3 +111,30 @@ header{
 .map-stats-text{
 	text-align: center;
 }
+
+footer{
+    background: #fff;
+    padding: 80px 0px;
+    color: #52525B;
+}
+
+.footer-h{
+    margin: 0;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.footer-el a{
+    color: #52525B;
+}
+
+.footer-el a:hover{
+    color: #000;
+}
+
+.footer-title{
+	color: #000;
+	margin-bottom: 30px;
+}
