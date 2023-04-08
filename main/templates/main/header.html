@@ -4,27 +4,29 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #fff;" data-bs-theme="light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img class="header-logo" src="{% static 'main/img/logo.png' %}" alt="" height="50px">
+                <img class="header-logo" src="{% static 'main/img/logo.png' %}" alt="" height="60px">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link fw-bold header-btn" href="#">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold header-btn" href="#">Карта</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold header-btn" href="#">Вакансии</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link fw-bold header-btn" href="#">О нас</a>
-                </li>
-            </ul>
-            <div class="d-flex">
-                <button class="btn-login fw-bold" type="submit">Авторизация</button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link header-btn" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-btn" href="#">Карта</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-btn" href="#">Вакансии</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link header-btn" href="#">О нас</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-dark btn-login" type="submit">Авторизация</button>
+                </div>
             </div>
         </div>
     </nav>
