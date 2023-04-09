@@ -16,13 +16,53 @@
                 <h2 class="uav-trt-title">Беспилотники в базе "{{ base.name }}"</h2>
                 {% for uav in uavs %}
                     <div class="uav-card d-flex flex-row">
-                        <img class="uav-img" src="{{ uav.img_url }}">
-                        <h3 class="uav-name">{{ uav.name }}</h3>
-                        {% if uav.on_flight %}
-                            <span>В полете</span>
-                        {% else %}
-                            <span>На стоянке</span>
-                        {% endif %}
+                        <img class="uav-img" src="{{ uav.0 }}">
+                        <h3 class="uav-name">{{ uav.1 }}</h3>
+                        <div class="uav-static-info d-flex flex-column">
+                            {% if uav.2 %}
+                                <span class="uav-state">В полете</span>
+                            {% else %}
+                                <span class="uav-state">На базе</span>
+                            {% endif %}
+                            <span class="uav-oper">Оператор: {{ uav.3 }}</span>
+                            <span class="uav-range">Покрытие: {{ uav.4 }} км</span>
+                            <span>На карте: {{ uav.9 }}</span>
+                        </div>
+                        <div class="uav-cur-info d-flex flex-column">
+                            <span>Текущие координаты:</span>
+                            <span>x: {{ uav.5 }}</span>
+                            <span>y: {{ uav.6 }}</span>
+                            {% if uav.7 == 0 %}
+                                <span>Ждет на базе</span>
+                            {% else %}
+                                <span>Направляется к точке {{ uav.7 }}</span>
+                            {% endif %}
+                            <span>В воздухе: {{ uav.8 }} мин.</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="d-flex flex-row justify-content-center map  ">
+                <img src="{{ map }}" alt="">
+            </div>
+            <div class="markers-trt d-flex flex-column">
+                <h2>Маркеры на карте</h2>
+                {% for mk in markers %}
+                    <div class="marker-card d-flex flex-row">
+                        <h3 class="mark-name">{{ mk.0 }}</h3>
+                        <div class="uav-static-info d-flex flex-column">
+                            {% if mk.2 == 0 %}
+                                <span>БПЛА не назначен</span>
+                            {% else %}
+                                <span>Номер БПЛА: {{ mk.2 }}</span>
+                            {% endif %}
+                            <span>{{ mk.3 }}</span>
+                        </div>
+                        <div class="uav-cur-info d-flex flex-column">
+                            <span>Координаты:</span>
+                            <span>x: {{ mk.6 }}</span>
+                            <span>y: {{ mk.7 }}</span>
+                        </div>
                     </div>
                 {% endfor %}
             </div>

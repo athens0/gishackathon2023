@@ -9,10 +9,45 @@
 }
 
 .uav-img{
-    max-width: 300px;
+    width: 300px;
 }
 
 .uav-name{
     align-self: center;
-    margin: 0px 20px;
+    margin: 0px 40px;
+    margin-right: auto;
+}
+
+.uav-card{
+    border: solid 1px #000;
+    padding: 20px 10px;
+}
+
+.uav-trt{
+    border: solid 1px #000;
+    padding: 10px 10px;
+    margin-bottom: 40px;
+}
+
+.uav-static-info{
+    margin-right: 40px;
+}
+
+.map{
+    margin-bottom: 40px;
+}
+
+.marker-card{
+    border: solid 1px #000;
+    padding: 20px 10px;
+}
+
+.markers-trt{
+    border: solid 1px #000;
+    padding: 10px 10px;
+    margin-bottom: 40px;
+}
+
+.mark-name{
+    margin-right: 50px;
 }
