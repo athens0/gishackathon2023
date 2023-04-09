@@ -9,12 +9,13 @@
 }
 
 .uav-img{
-    width: 300px;
+    width: 20%;
+    height: 100%;
 }
 
 .uav-name{
     align-self: center;
-    margin: 0px 40px;
+    margin: 0px 2%;
     margin-right: auto;
 }
 
@@ -49,5 +50,5 @@
 }
 
 .mark-name{
-    margin-right: 50px;
+    margin-right: 2%;
 }
